@@ -13,10 +13,10 @@ function renderTasks() {
   taskList.innerHTML = "";
   tasks.forEach((task) => {
     const li = document.createElement("li");
-    li.className = "task-item";
+    li.className = `task-item${task.completed ? " completed" : ""}`;
     li.innerHTML = `
-      <span>${task.text}</span>
-      <button onclick="toggleTask(${task.id})">${task.completed ? "Undo" : "Done"}</button>
+      <span class="task-text">${task.text}</span>
+      <button class="toggle-btn" onclick="toggleTask(${task.id})">${task.completed ? "Undo" : "Done"}</button>
     `;
     taskList.appendChild(li);
   });
