@@ -5,8 +5,8 @@ const taskCount = document.getElementById("task-count");
 const actionBtn = document.getElementById("action-btn");
 
 let tasks = [
-  { id: 1, text: "Learn Git branching", completed: false },
-  { id: 2, text: "Resolve merge conflicts", completed: false },
+  { id: 1, text: "Test dev branch merge conflicts", completed: false },
+  { id: 2, text: "Experiment with neon violet styling", completed: false },
 ];
 
 function renderTasks() {
@@ -20,7 +20,7 @@ function renderTasks() {
     `;
     taskList.appendChild(li);
   });
-  taskCount.textContent = `[DEV] Active Tasks: ${tasks.filter((t) => !t.completed).length} / ${tasks.length}`;
+  taskCount.textContent = `[DEV-BETA] ${tasks.filter((t) => !t.completed).length} active / ${tasks.length} total tasks`;
 }
 
 function toggleTask(id) {

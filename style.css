@@ -1,10 +1,10 @@
 :root {
-    --primary-color: #7c3aed;
-    --bg-color: #f5f3ff;
-    --card-bg: #ffffff;
-    --text-color: #2e1065;
-    --accent-color: #a855f7;
-    --border-radius: 12px;
+    --primary-color: #9333ea;
+    --bg-color: #0f172a;
+    --card-bg: #1e293b;
+    --text-color: #f1f5f9;
+    --accent-color: #c084fc;
+    --border-radius: 14px;
 }
 
 * {
@@ -29,7 +29,7 @@ body {
     background: var(--card-bg);
     border-radius: var(--border-radius);
     padding: 1.5rem;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
 }
 
 .app-header {
@@ -38,12 +38,12 @@ body {
 }
 
 #app-title {
-    color: var(--primary-color);
+    color: var(--accent-color);
     font-size: 1.8rem;
 }
 
 #app-subtitle {
-    color: #64748b;
+    color: #a855f7;
     font-size: 0.95rem;
     margin-top: 0.25rem;
 }
@@ -57,7 +57,9 @@ body {
 #task-input {
     flex: 1;
     padding: 0.6rem 0.8rem;
-    border: 1px solid #cbd5e1;
+    background: #0f172a;
+    color: #f1f5f9;
+    border: 1px solid #6b21a8;
     border-radius: var(--border-radius);
 }
 
@@ -81,8 +83,8 @@ button {
 }
 
 .btn.secondary {
-    background: #ede9fe;
-    color: #5b21b6;
+    background: #581c87;
+    color: #f3e8ff;
 }
 
 #task-list {
@@ -97,9 +99,9 @@ button {
     align-items: center;
     justify-content: space-between;
     padding: 0.6rem 0.8rem;
-    background: #ede9fe;
+    background: #334155;
     border-radius: var(--border-radius);
-    border-left: 4px solid var(--primary-color);
+    border-left: 4px solid var(--accent-color);
     transition: all 0.25s ease;
 }
 
@@ -109,17 +111,17 @@ button {
 
 /* Better styling for completed / done tasks */
 .task-item.completed {
-    background: #f1f5f9;
-    border-left-color: #94a3b8;
-    opacity: 0.8;
+    background: #1e293b;
+    border-left-color: #64748b;
+    opacity: 0.65;
 }
 
 .task-item.completed .task-text {
     text-decoration: line-through;
-    color: #64748b;
+    color: #94a3b8;
     font-style: italic;
 }
 
 .task-item.completed .toggle-btn {
-    background: #64748b;
+    background: #475569;
 }
