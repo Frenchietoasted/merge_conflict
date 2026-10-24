@@ -1,10 +1,10 @@
 :root {
-    --primary-color: #7c3aed;
-    --bg-color: #f5f3ff;
+    --primary-color: #059669;
+    --bg-color: #ecfdf5;
     --card-bg: #ffffff;
-    --text-color: #2e1065;
-    --accent-color: #a855f7;
-    --border-radius: 12px;
+    --text-color: #064e3b;
+    --accent-color: #10b981;
+    --border-radius: 8px;
 }
 
 * {
@@ -43,7 +43,7 @@ body {
 }
 
 #app-subtitle {
-    color: #64748b;
+    color: #047857;
     font-size: 0.95rem;
     margin-top: 0.25rem;
 }
@@ -57,7 +57,7 @@ body {
 #task-input {
     flex: 1;
     padding: 0.6rem 0.8rem;
-    border: 1px solid #cbd5e1;
+    border: 1px solid #a7f3d0;
     border-radius: var(--border-radius);
 }
 
@@ -81,8 +81,8 @@ button {
 }
 
 .btn.secondary {
-    background: #ede9fe;
-    color: #5b21b6;
+    background: #d1fae5;
+    color: #065f46;
 }
 
 #task-list {
@@ -97,7 +97,7 @@ button {
     align-items: center;
     justify-content: space-between;
     padding: 0.6rem 0.8rem;
-    background: #ede9fe;
+    background: #f0fdf4;
     border-radius: var(--border-radius);
     border-left: 4px solid var(--primary-color);
     transition: all 0.25s ease;
@@ -109,9 +109,9 @@ button {
 
 /* Better styling for completed / done tasks */
 .task-item.completed {
-    background: #f1f5f9;
+    background: #e2e8f0;
     border-left-color: #94a3b8;
-    opacity: 0.8;
+    opacity: 0.75;
 }
 
 .task-item.completed .task-text {

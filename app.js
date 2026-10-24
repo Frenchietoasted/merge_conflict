@@ -5,8 +5,8 @@ const taskCount = document.getElementById("task-count");
 const actionBtn = document.getElementById("action-btn");
 
 let tasks = [
-  { id: 1, text: "Learn Git branching", completed: false },
-  { id: 2, text: "Resolve merge conflicts", completed: false },
+  { id: 1, text: "Deploy to production environment", completed: false },
+  { id: 2, text: "Verify merge conflicts resolution", completed: false },
 ];
 
 function renderTasks() {
@@ -20,7 +20,7 @@ function renderTasks() {
     `;
     taskList.appendChild(li);
   });
-  taskCount.textContent = `[DEV] Active Tasks: ${tasks.filter((t) => !t.completed).length} / ${tasks.length}`;
+  taskCount.textContent = `[PROD] ${tasks.filter((t) => !t.completed).length} items remaining to complete`;
 }
 
 function toggleTask(id) {
@@ -41,7 +41,9 @@ taskForm.addEventListener("submit", (e) => {
 });
 
 actionBtn.addEventListener("click", () => {
-  tasks = tasks.filter((task) => !task.completed);
+  tasks.forEach((task) => {
+    task.completed = true;
+  });
   renderTasks();
 });
 
